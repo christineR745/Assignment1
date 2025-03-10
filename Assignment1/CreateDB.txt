@@ -1,0 +1,27 @@
+-- Use new database
+USE studentsDB;
+
+-- Create the users table
+CREATE TABLE users (
+  id INT(6) NOT NULL AUTO_INCREMENT,
+  password VARCHAR(255) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  reg_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  PRIMARY KEY (id)
+);
+
+-- Create the students table
+CREATE TABLE students (
+  id INT(6) NOT NULL,
+  name VARCHAR(50),
+  email VARCHAR(100),
+  PRIMARY KEY (id)
+);
+
+-- Insert 5 example students
+INSERT INTO students (id, name, email) VALUES
+('281873', 'Lorrie Bond', 'lorrieb@school.com'),
+('588238', 'Roslyn French', 'roslynf@school.com'),
+('392262', 'Hugo Obrien', 'hugoo@school.com'),
+('438606', 'Diego Pope', 'diegop@school.com'),
+('507548', 'Myra Ewing', 'myrae@school.com');

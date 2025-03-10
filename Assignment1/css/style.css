@@ -1,0 +1,86 @@
+body {
+    background-color:gainsboro;
+}
+
+h2 {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+form {
+    align-self: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 0;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+nav {
+    background: lightseagreen;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+ul.studentList {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+ul.studentList li {
+    background: #f8f9fa; /* Light gray background */
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
